@@ -10,8 +10,6 @@ window.addEventListener("scroll", function() {
   }  else {
     scrollHeader.classList.remove('gray')
   }
-  
-  console.log('scrollPos')
 
 })
 
