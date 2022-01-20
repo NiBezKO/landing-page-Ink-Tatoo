@@ -43,10 +43,12 @@ p {
     display: flex;
     padding: 35px 15px;
     justify-content: space-between;
+    white-space: nowrap
 }
 
 .header.gray {
-    background-color: rgb(174, 174, 174);
+    background-color: rgb(204, 200, 182);
+    
 }
 
 .ink__logo {
@@ -67,9 +69,18 @@ p {
     margin: 90px 0 0 30px;
     font-family: 'Times New Roman';
     font-size: 15px;
+    font-weight: 900;
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(26, 26, 26);
+}
+
+.logo__header {
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    font-weight: 900;
+    font-style: italic;
+    margin-left: 15px;
 }
 
 .nav__link:hover {
@@ -210,36 +221,8 @@ p {
 ==================================================*/
 
 .slider {
-    max-width: 800px;
-}
-
-.slider__items {
-    counter-reset: slide;
-}
-
-.slider__item {
-    position: relative;
-    counter-increment: slide;
-}
-
-.slider__item::after {
-    content: counter(slide);
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #fff;
-    font-style: italic;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.img-fluid {
-    display: inline-block;
-    height: auto;
     max-width: 100%;
 }
-
-
 .testimonals {
     width: 100%;
     height: 350px;
@@ -285,7 +268,7 @@ p {
     background-size: cover;
 }
 
-.participant__teamone {
+.participant__team-one {
     width: 33%;
     background: url('../img/CoryImg.png') center  no-repeat;
     background-size: cover;
@@ -318,6 +301,14 @@ p {
     
 }
 
+.team__social {
+    transition: 1s; 
+}
+
+.team__social:hover {
+    transform: scale(1.2); 
+}
+
 .facebook {
     margin-left: 50px;
 }
@@ -342,7 +333,7 @@ p {
     margin-left: 50px;
 }
 
-.participant__teamtwo {
+.participant__team-two {
     width: 33%;
     height: 500px;
     background: url('../img/KatIMG.png')   no-repeat;
@@ -375,7 +366,7 @@ p {
 }
 
 .form__submit {
-    width: 300px;
+    width: 100%;
     height: 105px;
 }
 
@@ -398,6 +389,10 @@ p {
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+}
+
+.submit__button:hover {
+    background-color: rgb(156, 150, 89);
 }
 
 /* Comments 
@@ -593,7 +588,7 @@ p {
 }
 
 .button__massage:hover {
-    background-color: rgb(27, 112, 6);
+    background-color: rgb(156, 150, 89);
 }
 
 /* Footer
@@ -673,7 +668,7 @@ p {
     width: 50%;
 }
 
-.participant__teamone {
+.participant__team-one {
     width: 50%;
 }
 
@@ -682,7 +677,7 @@ p {
     height: 500px;
 }
 
-.participant__teamtwo {
+.participant__team-two {
     width: 50%;
 }
 
@@ -877,7 +872,7 @@ p {
     width: 100%;
 }
 
-.participant__teamone {
+.participant__team-one {
     width: 100%;
     height: 500px;
 }
@@ -887,7 +882,7 @@ p {
     height: 500px;
 }
 
-.participant__teamtwo {
+.participant__team-two {
     width: 100%;
 }
 
