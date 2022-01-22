@@ -46,9 +46,8 @@ p {
     white-space: nowrap
 }
 
-.header.gray {
-    background-color: rgb(204, 200, 182);
-    
+.header.yellow {
+    background-color: rgb(204, 200, 182); 
 }
 
 .ink__logo {
@@ -796,9 +795,9 @@ p {
 
 .tatoo__nav._active {
     display: block;
-    background-color: rgb(174, 174, 174);
-    margin: 25px 20px 25px 25px;
-    width: auto;
+    background-color: rgb(204, 200, 182); 
+    margin-bottom: 25px ;
+    width: 100%;
     left: 0;
     text-align: center;
     z-index: 1;
@@ -808,7 +807,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     padding: 0 50px;
 }
 

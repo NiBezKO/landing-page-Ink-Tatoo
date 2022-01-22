@@ -6,9 +6,9 @@ window.addEventListener("scroll", function() {
   let scrollPos = window.scrollY
 
   if ( scrollPos > 500) {
-    scrollHeader.classList.add('gray')
+    scrollHeader.classList.add('yellow')
   }  else {
-    scrollHeader.classList.remove('gray')
+    scrollHeader.classList.remove('yellow')
   }
 
 })
@@ -47,13 +47,22 @@ const dropMenu = document.querySelector (".tatoo__nav")
      dropMenu.classList.toggle('_active');
 });
 
-/* Slider */
+/* Testimonials-slider  */
 
 document.addEventListener('DOMContentLoaded', function () {
     // инициализация слайдера
-    var slider = new SimpleAdaptiveSlider('.slider', {
+    var slider = new SimpleAdaptiveSlider('#slider-1', {
       autoplay: true,
       interval: 5000,
     });
   });
 
+/* Slider twitter comment */
+
+document.addEventListener('DOMContentLoaded', function () {
+  // инициализация слайдера
+  var slider = new SimpleAdaptiveSlider('#slider-2', {
+    autoplay: true,
+    interval: 5000,
+  });
+});
