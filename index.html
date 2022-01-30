@@ -399,10 +399,10 @@
             <div class="newsletter__inner">
                 <h3 class="newsletter__title">Newsletter</h3>
                 <p class="newsletter__text">Join thousands of other<br> people subscribe to our news</p>
-                <form action="" class="form__submit">
+                <form action="#" method="get" class="form__submit">
                     <input class="input__mail" name="E-mail" placeholder="INSERT EMAIL" required>
                     <div class="button__bottom">
-                        <button class="submit__button">SUBMIT</button>
+                        <button type="submit" class="submit__button">SUBMIT</button>
                     </div>
                 </form>
             </div>
@@ -721,15 +721,15 @@
                 </div>
             </div>
             <div class="right__block">
-                    <form class="contact__form" action="">
+                    <form method="get" class="contact__form" action="#">
                         <input class="contact__name" placeholder="FULL NAME" type="text" required>
                         <div class="contact__mail_block">
                             <input class="contact__mail" placeholder="E-MAIL" type="text" required>
                         </div>
                         <div class="contact__massage_block">
-                            <input class="contact__massage" placeholder="MASSAGE" type="text" required>
+                            <textarea class="contact__massage" placeholder="MASSAGE" type="text" required></textarea>
                         </div>
-                        <button class="button__massage">Massage</button>
+                        <button type="submit" class="button__massage">Massage</button>
                     </form>
             </div>
         </div><!--/contacts__inner-->
